@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : &quot;#262626&quot;;
+border : 0.5px solid white;
+border-radius : 7px;
+color : white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="list">
+    <property name="geometry">
+     <rect>
+      <x>615</x>
+      <y>11</y>
+      <width>171</width>
+      <height>511</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picture">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>551</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Picture</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="blur_menu">
+    <property name="title">
+     <string>Blur</string>
+    </property>
+    <addaction name="gaussian_blur"/>
+    <addaction name="bow_blur"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="coloring_menu">
+    <property name="title">
+     <string>Coloring</string>
+    </property>
+    <addaction name="bw_btn"/>
+   </widget>
+   <widget class="QMenu" name="other_menu">
+    <property name="title">
+     <string>Other</string>
+    </property>
+    <addaction name="inTheLeft"/>
+    <addaction name="inTheRight"/>
+   </widget>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="open_file"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="blur_menu"/>
+   <addaction name="coloring_menu"/>
+   <addaction name="other_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="gaussian_blur">
+   <property name="text">
+    <string>Gaussian Blur</string>
+   </property>
+  </action>
+  <action name="bow_blur">
+   <property name="text">
+    <string>Bow Blur</string>
+   </property>
+  </action>
+  <action name="bw_btn">
+   <property name="text">
+    <string>Black&amp;White Effect</string>
+   </property>
+  </action>
+  <action name="open_file">
+   <property name="text">
+    <string>Save File</string>
+   </property>
+  </action>
+  <action name="inTheLeft">
+   <property name="text">
+    <string>In The Right</string>
+   </property>
+  </action>
+  <action name="inTheRight">
+   <property name="text">
+    <string>In The Left</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
